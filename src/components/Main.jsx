@@ -7,7 +7,7 @@ export default function Main() {
     imageUrl: "http://i.imgflip.com/1bij.jpg",
   });
 
-  function handleChange(event) {
+  function handleChange(event) {  
     const { name, value } = event.target; // Get both name and value
     console.log(name, value);
     setMeme((prevMeme) => ({ ...prevMeme, [name]: value }));
